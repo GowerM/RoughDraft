@@ -6,7 +6,7 @@
 	Global
 ===================*/
 html {
-	background: url('../img/rice.png');	
+	background: url('../img/rice.png') #efd8a9;	
 }
 
 /*==============================
@@ -14,18 +14,18 @@ html {
 ==============================*/
 header h1 a {
         background: #bec49a url("../img/Logo.png") no-repeat center center;
-        border-radius: 150px;
+        border-radius: 50%;
         display: block;
         height: 200px;
-        left: 40px;
-        position: absolute;
+       	left: 40px;
+        position: relative;
         text-indent: -999em;
         width: 230px;
         z-index: 2;
         
         /* CSS 3*/
-        -webkit-transition: background-color 2.5s;
-		transition: background-color 2.5s;
+    -webkit-transition: background-color .75s;    
+    transition: background-color .75s;
 		
 }
 
@@ -45,42 +45,37 @@ header {
 header li {
         float: left;
         list-style: none;
-		margin-top: 70px;
-		border-radius: 10px;
+		border-radius: 35%;
+		padding-top: 10px;
 }
 
 
 header ul {
-        margin: 0;
+        margin: 0 auto;
 }
 
 
 header div {
         background: #bec49a;        
-        border-radius: 20px;
-    	height: 64px;
+        border-radius: 20px; /*20px*/
+    	height: 64px; /*64px*/
         position: absolute;
         left: 0;
         top: 70px;
-        width: 960px;
-		
-}
+        width: 100%; /*960px*/
+		   }
 
 header nav {
-	position: absolute;
-	left: 0;
-	top: 30px;
+	float: right;
+	margin-top: -177px;
 }
 
 nav li {
-	margin: 70px 7px 0 7px ;	
+	margin: 70px 7px 0 7px ;
+	background: #bec49a;
+	display : inline;
+  	font-family: 'greyscalebasicregular', sans-serif;	
 }
-
-nav li:nth-child(1) {
-        margin-left: 450px;
-}
-
-
 
 nav a:link,
 nav a:visited {
@@ -92,12 +87,12 @@ nav a:visited {
         text-align: center;        
         text-decoration: none;
         text-transform: uppercase;
-        width: 128px;
+        width: 128px; 
 		z-index: 2;
         
         /*CSS 3*/
-        -webkit-transition: all .25s;
-		transition: all .25s;
+  -webkit-transition: all 1s;      
+  transition: all 1s;
 }
 
 nav a:hover, 
@@ -177,9 +172,9 @@ h6 {
 
 p {
 	font-family: 'rabioheadregular', helvetica, sans-serif;
-        line-height: 24px;
-		font-size: 1.125em;
-		color: #6c7371;		
+    line-height: 24px;
+	font-size: 1.25em;
+	color: #6c7371;		
 }
 
  
@@ -189,18 +184,6 @@ a {
   color : #bec49a;
 }
 
-ul {
-  list-style : none;
-  size : 70px;
-  padding : 10px;
-  margin : 100px;
-}
-
-li {
-  display : inline;
-  font-family: 'greyscalebasicregular', sans-serif;
-  background: #bec49a;
-}
 
 /*===============================================
 	Structure and layout
@@ -208,21 +191,68 @@ li {
 
 
 .container {
-        margin: 0 auto;
-        width: 960px;
+        margin: 10px auto;
+        width: 90%; /*960px*/
+		background: #f5f1df;
+		padding: 20px;	
+}
+
+.container:after {
+	content : ".";
+  display : block;
+  height : 0;
+  clear : both;
+  visibility : hidden;
 }
 
 
 article {
-        padding-top: 200px;
-		position: relative;
+        padding-top: 0.20833%;
 }
 
+/*==================
+	index
+=================*/
+
+.greeting {
+	margin: 0 auto;
+	width:  90%; /*864px*/	
+}
 
 
 /*=================
 	Write.html 
 ===================*/
+section.wleft,
+section.wright{
+  text-align: center;
+  border: .25em double #97c2cc;
+  border-radius: 20%;
+  width: 45%; /*432px*/
+  padding: 1em;
+  margin: .75em;
+  float: left;
+}
+
+.wleft a:link,
+.wleft a:visited,
+.wright a:link,
+.wright a:visited {
+  text-decoration: none;
+  color: #6c7371;
+  
+  
+  /*CSS*/
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+
+.wleft:hover,
+.wleft:active,
+.wright:hover,
+.wright:active {
+  box-shadow: inset 0 0 2em .1em #97c2cc;
+}
 
 
 
@@ -231,9 +261,38 @@ article {
 	Design.html
 ===================*/
 
+section.dleft,
+section.dright {
+  text-align: center;
+  border: .25em double #97c2cc;
+  width: 25%;
+  height: 500px;
+  padding: 1em;
+  margin: .75em;
+  float: left;
+}
 
+.dleft a:link,
+.dleft a:visited,
+.dright a:link,
+.dright a:visited {
+  text-decoration: none;
+  color: #6c7371;
+  
+  
+  /*CSS*/
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
 
-
+.dleft:hover,
+.dleft:active,
+.dleft:target,
+.dright:hover,
+.dright:active,
+.dright:target {
+  box-shadow: inset 0 0 2em .1em #97c2cc;
+}
 
 /*=================
 	Submit.html
@@ -242,52 +301,69 @@ article {
 
 /*-----Layout--------*/
 
-section .instructions {
- 	width: 50%;
-	postion: absolute; 
-	top: 0;
-	left:0;
+
+
+section.types {
+	width: 70.833333%; /*680px*/
+	float: left;
+	/*border-right: .25em double #97c2cc;
+	padding-right: 10px;*/
 }
 
-section .types {
-	width: 50%; 
-	position: absolute;
-	top: 0;
-	right: 0;
+section:after {
+  content : ".";
+  display : block;
+  height : 0;
+  clear : both;
+  visibility : hidden;
 }
 
+section.instructions {
+ 	width: 100%; /*960*/
+	padding: 600px 0 0 0;
+}
 
+aside {
+	float: right;
+	width: 20.083333%; /*260px*/
+	padding-bottom: 250px;
+	background: #97c2cc;
+	padding: 50px;		
+}
 
-.prices {
+aside li {
   display : list;
   font-family: 'rabioheadregular', helvetica, sans-serif;
-  color: #6c7371;
-  font-size : .75em;
-  list-style : none;	
+  line-height: 24px;
+  font-size: 1em;
+  color: #6c7371;	
+  list-style: none;
+  	
 }
 
 /*form*/
 
 input {
-  font-size : inherit;
+  font-size: inherit;
 }
 
 input[type="text"] {
-  display : block;
-  margin-bottom : 15px;
-  padding : 10px;
-  width : 250px;
-  border : 2px solid steelblue;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #97c2cc;
 }
 
 textarea {
   width: 270px;
   height: 300px;
-  margin-bottom: 10px;
+  border: 2px solid #97c2cc;
+  margin-bottom: 20px;
 }
 
 input[type="radio"] {
-  margin :0 8px 25px 18px;
+  margin: 0 8px 25px 18px;
 }
 
 input[type="radio"]:first-child {
@@ -295,37 +371,37 @@ input[type="radio"]:first-child {
 }
 
 input[type="submit"] {
-  width: 100px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   border: none;
-  background: steelblue;
-  color: white;
+  background: #6c7371;
+  color: #97c2cc;
   font-size: inherit;
-  margin-bottom: 20px;
+  border-radius: 10%;
+  font-size: font-family: 'roman_sdregular', serif;
+	font-size: 2em;
 }
 
 input:hover {
-  background-color: grey;
-  color: red;
+  background-color: #6c7371;
+  color: #801c1c;
 }
 
 input:focus {
-  background-color : brown;
+  background-color: brown;
 }*/
 
 /*UI Element States Pseudo-Classes*/
 
 input[type="text"]:enabled {
-  background : #fcfbcc;
+  background: #fcfbcc;
 }
- /*can't enter anything
-put the disabled property at the end of the tag*/
 
 /*By putting the + will target adjacent siblings*/
 
 input[type="radio"]:checked + label {
-  font-size : 22px;
-  font-weight : bold;
+  font-size: 1.375em;
+  font-weight: bold;
 }
 
 
