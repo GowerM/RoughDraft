@@ -22,3 +22,4 @@ My objective for my website is
 * [Fonts] (http://www.fontsquirrel.com/)
 * [Nav transitions taken from Nessst redesign]
 * [Short stories and essays were all written by me]
+* [sprites from Iconmaster]
