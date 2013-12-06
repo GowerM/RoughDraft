@@ -230,7 +230,9 @@ article {
 	Write.html 
 ===================*/
 .wleft h1,
-.wright h1 {
+.wright h1,
+.dleft h1,
+.dright h1 {
 	border-bottom: none;
 }
 
@@ -245,14 +247,21 @@ article {
 }
 
 section.wleft,
-section.wright{
+section.wright {
   text-align: center;
   border: .25em double #97c2cc;
   border-radius: 20%;
   width: 45%; /*432px*/
   padding: 1em;
   margin: .75em;
-  float: left;
+}
+
+section.wleft {
+	float: left;	
+}
+
+section.wright {
+	float: right;	
 }
 
 .wleft a:link,
@@ -354,6 +363,11 @@ section.dright {
   float: left;
 }
 
+section.dleft img,
+section.dright img {
+	width: 50%;	
+}
+
 .dleft a:link,
 .dleft a:visited,
 .dright a:link,
@@ -375,6 +389,13 @@ section.dright {
 .dright:target {
   box-shadow: inset 0 0 2em .1em #97c2cc;
 }
+
+/*----images------*/
+
+.bcopy img {
+	width: 60%;	
+}
+
 
 /*=================
 	Submit.html
@@ -486,5 +507,11 @@ input[type="radio"]:checked + label {
   font-weight: bold;
 }
 
+/*=============================
+	media queries
+	.wright, .wleft, .dright, .dleft need to be non-floating
+	Adjust nav for mobile and medium
+	possibly fix design too
 
+==============================*/
 
