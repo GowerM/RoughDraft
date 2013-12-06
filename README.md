@@ -6,7 +6,7 @@ My objective for my website is
 
 * Web presence
 * Portfolio
-* A way to easily contact for services
+* A way to easily be contacted for services
 
 ##Content
 
@@ -18,5 +18,7 @@ My objective for my website is
 ##Attribution
 
 * [Codepen] (http://codepen.io)
-* [All images were taken by me](#)
-* [Fonts] (http://www.google.com/fonts)
+* [All images were drawn, taken by me](#)
+* [Fonts] (http://www.fontsquirrel.com/)
+* [Nav transitions taken from Nessst redesign]
+* [Short stories and essays were all written by me]
