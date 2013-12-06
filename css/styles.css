@@ -266,44 +266,50 @@ footer p {
  font-size: 1em;	
 }
 
-/*Next and Previous buttons*/
+/*Next and Previous buttons/
 footer.previous,
 footer.next {
   width: 40px;
-}
+  height: 48px;
+}*/
 
 footer.previous a,
 footer.next a {
+  padding-top:10px;
+  width: 40px;
+  height: 48px;
   text-decoration: none;
   color: #6e684b;
-  font-size: 1.5em; /*24px*/
+  font-size: 4em; /*48px*/
 }
 
 
-/*../img/sprite.png*/
+
 .previous {
   float: left;
   padding-left: 30px;
   padding-top: 5px;
-  background: url("./img/sprite.png") no-repeat -3px 0;
+  background: url("../img/sprite.png") no-repeat -3px 0;
+  font-size: 3em; /*48px*/
 }
 
 
 .previous:hover,
 .previous:target {
-  background: url("./img/sprite.png") no-repeat -3px -150px;
+  background: url("../img/sprite.png") no-repeat -3px -150px;
 }
 
 .next {
   float: right;
   padding-right: 50px;
   padding-top: 5px;
-  background: url("./img/sprite.png") no-repeat 50px 0;
+  background: url("../img/sprite.png") no-repeat 50px 0;
+  font-size: 3em; /*48px*/
 }
 
 .next:hover,
 .next:target {
-  background: url("./img/sprite.png") no-repeat 50px -150px;
+  background: url("../img/sprite.png") no-repeat 50px -150px;
 }
 
 
